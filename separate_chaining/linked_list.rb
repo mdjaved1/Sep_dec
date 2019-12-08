@@ -36,15 +36,7 @@ class LinkedList
   end
 
   # This method prints out a representation of the list.
-  def print(hash)
-    new_n = @head
-    i = 0
-    while !new_n.nil?
-      puts "Hash: #{hash} -> Position: #{i} -> Key: #{new_n.key} -> Value: #{new_n.value}"
-      new_n = new_n.next
-      i += 1
-    end
-  end
+ 
 
   # This method removes `node` from the list and must keep the rest of the list intact.
   def delete(new_n)

@@ -78,14 +78,5 @@ class OpenAddressing
     x / self.size 
   end
   
-  def print_hash
-    (0...size()).each do |i|
-      if @items[i] != nil
-        puts "index: #{i}, #{@items[i].key}: #{@items[i].value}"
-      end
-    end
-    puts "load factor: #{load_factor()}"
-  end
-  
   
 end

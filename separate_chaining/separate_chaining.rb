@@ -72,11 +72,12 @@ class SeparateChaining
     end
   end
 
-  def print
-    for i in 0..self.size-1
-      if !@items[i].nil?
-        @items[i].print(i)
+  def print_hash
+    (0...size()).each do |i|
+      if @items[i] != nil
+        puts "index: #{i}, #{@items[i].key}: #{@items[i].value}"
       end
     end
+    puts "load factor: #{load_factor()}"
   end
 end
