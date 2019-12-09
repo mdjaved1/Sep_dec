@@ -73,11 +73,20 @@ class SeparateChaining
   end
 
   def print_hash
-    (0...size()).each do |i|
-      if @items[i] != nil
-        puts "index: #{i}, #{@items[i].key}: #{@items[i].value}"
+    @items.each do |ele|
+      if ele.nil?
+         puts nil 
+      else
+      node = ele.head
+      while node != nil
+        puts "#{node.key}"
+        puts "#{node.value}"
+        node = node.next
+      end
       end
     end
     puts "load factor: #{load_factor()}"
   end
+  
 end
+

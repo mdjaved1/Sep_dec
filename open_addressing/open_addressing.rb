@@ -78,5 +78,17 @@ class OpenAddressing
     x / self.size 
   end
   
+ def print_hash  
+   
+   @items.each do |ele|
+     if ele.nil?
+       puts nil
+     else 
+       puts "#{ele.key}"
+       puts "#{ele.value}"
+     end
+   end
   
+ end
+ 
 end
